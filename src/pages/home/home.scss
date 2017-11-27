@@ -1,0 +1,73 @@
+page-home {
+	
+
+	ion-header
+	{
+		button
+		{
+			background-color: transparent !important;
+		}
+	}
+
+	ion-content
+	{
+		background-color: black;
+		background-image: url(https://image.freepik.com/free-vector/blurred-background-design_1107-224.jpg);
+		background-size: cover;
+		h2
+		{
+			color: #fff; text-align: center; margin-top: 20px; font-size: 50px;
+			div
+			{
+				float: left;
+				width: 50%;
+				text-align: center;
+				position: relative;
+				span
+				{
+					font-size: 15px;
+				}
+				&:first-child
+				{
+					border-right: solid 1px rgba(0,0,0,0.2);
+				}
+			}
+
+		}
+		h3
+		{
+			color: #fff;
+    		text-align: center;
+    		text-transform: uppercase;
+		}
+		img 
+		{
+			-webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+		    filter: url(#drop-shadow);
+		    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+		    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+		}
+		.more
+		{
+			padding-top: 100px;
+			color: #fff;
+			div
+			{
+				float: left;
+				text-align: center;
+				width: 33.3333%;
+			}
+		}
+	}
+
+	li 
+	{
+		padding: 5px;
+	}
+	span#ssr
+	{
+		color: #36b2ff;
+		display: block;
+		text-align: center;
+	}
+}

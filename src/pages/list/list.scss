@@ -1,0 +1,28 @@
+page-list {
+	ion-header
+	{
+		button
+		{
+			background-color: transparent !important;
+		}
+	}
+
+	ion-content
+	{
+		background-color: black;
+		background-image: url(https://image.freepik.com/free-vector/blurred-background-design_1107-224.jpg);
+		background-size: cover;
+
+		h3
+		{
+			text-align: center;
+			color: #fff;
+			text-transform: capitalize;
+			span 
+			{
+				color: #ffbaba;
+			}
+		}
+	}
+ 
+}

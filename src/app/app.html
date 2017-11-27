@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+<ion-menu [content]="content">
+
+  <ion-content>
+      
+      <div class="menuHead">
+          <img src="https://lh3.googleusercontent.com/1NWSffUULql2uPj0hT_WTwSTfmUv0yuXk0Rq0Q6tpcUZbMurPESyK8W2NBqpa8SRpA=w300" width="100px;">
+          <h5>Weather App</h5>
+      </div>
+
+      <button menuClose  *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

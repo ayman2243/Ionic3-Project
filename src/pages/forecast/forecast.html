@@ -1,0 +1,28 @@
+ 
+<ion-header>
+  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+</ion-header>
+
+
+<ion-content>
+
+    <h3>Cairo Forecast</h3>
+    <div class="item" *ngFor="let we of data?.list">
+      <div>
+        <h4>{{ we.weather[0].main }}</h4>
+        <span>{{ we.dt_txt }}</span>
+      </div>
+      <div>
+        <h5>{{(we.main.temp - 274.15).toFixed() }} <span>o</span></h5>
+        <img src="http://openweathermap.org/img/w/{{we.weather[0].icon}}.png">
+      </div>
+    </div>
+    <!--
+      <img src="http://openweathermap.org/img/w/{{we.weather[0].icon}}.png">
+    <li  *ngFor="let we of data?.list">
+      date: {{ we.dt_txt }} / Temp: {{ we.main.temp }} / Weather: {{ we.weather[0].main }}
+    </li>
+    -->
+</ion-content>

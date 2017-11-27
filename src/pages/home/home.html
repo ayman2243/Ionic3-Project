@@ -1,0 +1,52 @@
+ 
+<ion-header>
+  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+</ion-header>
+
+<ion-content padding>
+  <h3>{{data?.name}} Weather</h3>
+  <div style="text-align: center;">
+    <h5 style="color: #fff; text-transform: capitalize; font-size: 14px; padding: 0; margin-top: 10px;">{{data?.weather[0].description}}</h5>
+    <img src="http://openweathermap.org/img/w/{{data?.weather[0].icon}}.png" width="100px" style="">
+    <h2>
+      <div>
+        {{data?.main.temp - 274.15}}
+        <span>C</span>
+      </div>
+      <div>
+        {{ (((data?.main.temp-274.15)*1.8)+32).toFixed() }}
+        <span>F</span>
+      </div>
+    </h2>
+    <div class="more">
+      <div>
+        <h6>Humidity</h6>
+        <span>{{data?.main.humidity}}%</span>
+      </div>
+      <div>
+        <h6>Wind</h6>
+        <span>{{data?.wind.speed}}km</span>
+      </div>
+      <div>
+        <h6>Clouds</h6>
+        <span>{{data?.clouds.all}}</span>
+      </div>
+    </div>
+    
+  </div>
+  <!--
+  <ion-list>
+    <ul>
+      <li>Base : {{data?.base}}</li>
+      <li>Weather : {{data?.weather[0].main}}</li>
+      <li>Description : {{data?.weather[0].description}}</li>
+      <li>Temp : {{data?.main.temp}}</li>
+      <li>Country : {{data?.sys.country}}</li>
+    </ul>
+    <span id="ssr">Please check the console</span>
+  </ion-list>
+  -->
+
+</ion-content>
