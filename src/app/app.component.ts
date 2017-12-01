@@ -12,6 +12,7 @@ import { ForecastPage } from '../pages/forecast/forecast';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
+  title = 'Weather App';
 
   rootPage: any = HomePage;
 

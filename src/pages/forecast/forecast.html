@@ -12,7 +12,7 @@
     <div class="item" *ngFor="let we of data?.list">
       <div>
         <h4>{{ we.weather[0].main }}</h4>
-        <span>{{ we.dt_txt }}</span>
+        <span>{{ we.dt_txt | date:"MM/dd - hh:mm" }}</span>
       </div>
       <div>
         <h5>{{(we.main.temp - 274.15).toFixed() }} <span>o</span></h5>
